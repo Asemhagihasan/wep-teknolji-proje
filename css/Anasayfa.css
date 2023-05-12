@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open sans', sans-serif;
+}
+
+body {
+    background-color: #fefefe;
+    height: 99vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.tanitim {
+    position: absolute;
+    color: orange;
+    font-size: 2em;
+    left: 50px;
+    top: 170px;
+}
+
+h1 {
+    color: #333;
+    position: absolute;
+    top: 220px;
+    left: 50px;
+    font-size: 3em;
+}
+
+.unv {
+    color: orange;
+    position: absolute;
+    font-size: 2.5em;
+    top: 300px;
+    left: 50px;
+}
+
+
+li {
+    list-style: none;
+}
+
+.elements,
+.drop-elements,
+.loginbtn,
+.logo {
+    text-decoration: none;
+    color: #fefefe;
+    font-size: 1rem;
+}
+
+.elements:hover {
+    color: orange;
+}
+
+/* Header*/
+header {
+    position: relative;
+    padding: 0 2rem;
+    background-color: #333;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: orange;
+    text-decoration: none;
+}
+
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .links li .elements {
+    font-weight: 500 !important;
+}
+
+.navbar .burgerBtn {
+    color: #fefefe;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.loginbtn {
+    background-color: orange;
+    color: #fefefe;
+    padding: 0.5rem 1rem;
+    border: 2px;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.loginbtn:hover {
+    scale: 1.05;
+    color: #fefefe;
+}
+
+.loginbtn:active {
+    scale: 0.95;
+}
+
+/*Dropdown menu*/
+
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    height: 0;
+    width: 100%;
+    background: orange;
+    backdrop-filter: blur(15px);
+    overflow: hidden;
+    /* transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1275); */
+}
+
+.dropdown_menu.open {
+    height: 370px;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .loginbtn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #fefefe;
+}
+
+.contact {
+    width: 100% !important;
+    height: 140px;
+    background: -webkit-linear-gradient(left, orange, #333);
+    background: -o-linear-gradient(left, orange, #333);
+    background: -moz-linear-gradient(left, orange, #333);
+    background: linear-gradient(left, orange, #333);
+    position: absolute;
+    bottom: 0 !important;
+    display: flex;
+}
+
+.instagram,
+.facebook,
+.github {
+    font-size: 2rem;
+    padding-left: 30px;
+    padding-top: 10px;
+    color: #333;
+    cursor: pointer;
+}
+
+.Email a {
+    position: absolute;
+    color: #333;
+    bottom: 101px;
+    padding-left: 200px;
+    font-weight: 500;
+}
+
+/* Responsive*/
+
+@media(max-width:992px) {
+
+    .tanitim {
+        position: absolute;
+        color: orange;
+        font-size: 2em;
+        left: 50px;
+        top: 470px;
+
+    }
+
+    h1 {
+        color: #333;
+        position: absolute;
+        top: 550px;
+        left: 50px;
+        font-size: 3em;
+    }
+
+    .unv {
+        color: orange;
+        position: absolute;
+        font-size: 2.5em;
+        top: 630px;
+        left: 50px;
+    }
+
+    .navbar .links {
+        display: none;
+    }
+
+    body {
+        height: 900px;
+    }
+
+    .loginbtn {
+        display: none;
+    }
+
+    .navbar .burgerBtn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+
+    .Email a {
+        position: absolute;
+        bottom: 105px;
+    }
+
+    .contact {
+        position: absolute;
+        bottom: 0;
+    }
+}

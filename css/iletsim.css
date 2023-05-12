@@ -1,0 +1,43 @@
+label {
+    color: orange;
+    font-size: 20px;
+}
+
+input[type=text] {
+    background-color: #fff;
+    color: #000;
+}
+
+@media(max-width:992px) {
+    .needs-validation {
+        margin-top: 420px;
+    }
+
+    body {
+        height: 1500px !important;
+    }
+
+}
+
+@media(max-width:776px) {
+    body {
+        height: 1950px !important;
+    }
+}
+
+.btn-primary:hover {
+    background-color: orange !important;
+    border-color: #333;
+
+}
+
+.btn-primary {
+    background-color: orange;
+    border-color: #333;
+
+}
+
+ol,
+ul {
+    margin-top: 0.8%
+}
