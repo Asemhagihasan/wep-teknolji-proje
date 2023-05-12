@@ -6,60 +6,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/master.css">
+    <link rel="stylesheet" href="../css/Anasayfa.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+
     <title>Ana sayfa</title>
 </head>
 
 <body>
+    <div id="header"></div>
+    <div id="footer"></div>
     <div class="tanitim">Merhaba, ben Asem</div>
     <h1>programer</h1>
     <p>sakaryada bil. müh. öğrencisiyim</p>
-    <header>
-        <div class="navbar">
-            <div class="logo"><a href="index.html">Asem</a></div>
-            <ul class="links">
-                <li><a class="elements" href="index.html">Ana Sayfa</a></li>
-                <li><a class="elements" href="Egitim.html">Eğitim</a></li>
-                <li><a class="elements" href="sehirim.html">Şehirim</a></li>
-                <li><a class="elements" href="ilgili alanlar.html">ilgi alanlar</a></li>
-                <li><a class="elements" href="Hakinda.html">Hakında</a></li>
-                <li><a class="elements" href="Mirasimiz.html">Mirasımız</a></li>
-                <li><a class="elements" href="iletsim.html">iletşim</a></li>
-            </ul>
-            <a href="login.html" class="loginbtn">Login</a>
-            <div class="burgerBtn">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </div>
-        <div class="dropdown_menu">
-            <li><a class="drop-elements" href="Ana sayfa.html">Ana Sayfa</a></li>
-            <li><a class="drop-elements" href="Egitim.html">Eğitim</a></li>
-            <li><a class="drop-elements" href="sehirim.html">Şehirim</a></li>
-            <li><a class="drop-elements" href="ilgili alanlar.html">ilgi alanlar</a></li>
-            <li><a class="drop-elements" href="Hakinda.html">Hakında</a></li>
-            <li><a class="drop-elements" href="Mirasimiz.html">Mirasımız</a></li>
-            <li><a class="drop-elements" href="iletsim.html">iletşim</a></li>
-            <li><a href="login.html" class="loginbtn">Login</a></li>
-        </div>
-    </header>
-    <div class="contact">
-        <a class="instagram" href="https://www.instagram.com/asemhagihasan/">
-            <i class="fab fa-instagram"></i>
-        </a>
-        <a class="facebook" href="https://www.facebook.com/me/">
-            <i class="fab fa-facebook-f"></i>
-        </a>
-        <a class="github" href="">
-            <i class="fab fa-github"></i>
-        </a>
-    </div>
-    <div class="Email">
-        <a href="asemhagihasan12345@gmail.com">asemhagihasan12345@gmail.com</a>
-    </div>
-
     <script src="../js/js-codleri.js"></script>
 </body>
 
