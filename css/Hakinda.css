@@ -5,6 +5,22 @@
     margin: 100px auto;
 }
 
+.hakinda-main {
+    /* fallback for old browsers */
+    background: #ebbba7;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right,
+            #f8f5ea,
+            #ececec);
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right,
+            #f8f5ea,
+            #ececec);
+    height: 1600px;
+}
+
 /* The actual timeline (the vertical ruler) */
 .main-timeline-5::after {
     content: "";

@@ -10,7 +10,7 @@
  }
 
  a {
-     /* text-decoration: none; */
+     text-decoration: none;
  }
 
  @media(max-width:992px) {
@@ -20,6 +20,10 @@
      }
 
      #carouselExampleCaptions {
-         margin: 430px 0 200px 0 !important;
+         margin: 430px 0 18% 0 !important;
      }
+ }
+
+ .carousel-inner {
+     height: 770px;
  }

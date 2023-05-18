@@ -9,8 +9,19 @@
 }
 
 .main-miras {
-    height: 3400px;
-    background-color: rgb(165, 161, 161);
+    height: 2050px;
+    /* fallback for old browsers */
+    background: #ebbba7;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right,
+            #f8f5ea,
+            #ececec);
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right,
+            #f8f5ea,
+            #ececec);
 
 }
 
@@ -70,10 +81,6 @@ section {
     flex-wrap: wrap;
 }
 
-.projects {
-    background-color: rgb(165, 161, 161);
-}
-
 .projects .content1 {
     margin-top: 30px;
 }
@@ -120,11 +127,11 @@ section {
 
 .more-details {
     text-decoration: none;
-    color: #3a6cf4;
+    color: orange;
 }
 
 .more-details:hover {
-    color: #601cfc;
+    color: orange;
 }
 
 @media (max-width:1023px) {
@@ -158,7 +165,7 @@ section {
     }
 
     .main-miras {
-        height: 3200px;
+        height: 3650px !important;
     }
 
 }
@@ -177,13 +184,31 @@ section {
     }
 
     .main-miras {
-        height: 3200px;
+        height: 2700px !important;
+    }
+
+    .content1 {
+        margin-top: 400px !important;
+    }
+}
+
+@media (max-width:992px) {
+    .main-miras {
+        height: 3400px !important;
+    }
+
+    .content1 {
+        margin-top: 400px !important;
     }
 }
 
 @media (max-width:300px) {
     .main-miras {
         font-size: 10px;
+        height: 2600px !important;
+    }
 
+    .content1 {
+        margin-top: 400px !important;
     }
 }
